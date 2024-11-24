@@ -21,6 +21,7 @@ li{
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
+
     &-header{
         display: flex;
         justify-content: space-between;
@@ -33,6 +34,52 @@ li{
             align-items: center;
             gap: 15px;
         }
+    }
+
+    &-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 80vh;
+        .title-block{
+            align-self: flex-start;
+        }
+        .btn-table{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(140 140 140);
+            font-family: sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+          }
+                  
+          thead,
+          tfoot {
+            background-color: rgb(228 240 245);
+          }
+          
+          th,
+          td {
+            border: 1px solid rgb(160 160 160);
+            padding: 8px 10px;
+          }
+          th{
+            font-weight: 600;
+          }
+          
+          td:last-of-type {
+            text-align: center;
+          }
+          
+          tbody > tr:nth-of-type(even) {
+            background-color: rgb(237 238 242);
+          }
     }
 }
 
@@ -51,5 +98,8 @@ li{
     background-color: red;
 }
 
+.title-block{
+    font-size: 62px;
+}
 
 
