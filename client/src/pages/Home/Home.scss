@@ -37,6 +37,7 @@ li{
     }
 
     &-main{
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -100,6 +101,29 @@ li{
 
 .title-block{
     font-size: 62px;
+}
+
+.form-add{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    width: 600px;
+    padding: 20px 40px;
+    top: 10%;
+    border-radius: 25px;
+    background-color: lightblue;
+    .form-add-btn-box{
+        display: flex;
+        justify-content: start;
+        align-self: flex-end;
+        gap: 10px;
+        button{
+            padding: 10px 15px;
+        }
+    }
+
 }
 
 

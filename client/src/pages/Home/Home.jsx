@@ -43,9 +43,34 @@ function Home() {
                                 </div>
                             </td>
                         </tr>
-                        
                     </tbody>
                 </table>
+                <form action="/" method="post" className='form-add'>
+                    <div className="wrap-input">
+                        <label for="name_company">Company:</label>
+                        <input type="text" id="name_company" name="name_company" required/>
+                    </div>
+                    <div className="wrap-input">
+                        <label for="name_vacancy">Vacancy:</label>
+                        <input type="text" id="name_vacancy" name="name_vacancy" required/>
+                    </div>
+                    <div className="wrap-input">
+                        <label for="salary">Salary range:</label>
+                        <input type="number" id="salary" name="salary" required/>
+                    </div>
+                    <div className="wrap-input">
+                        <label for="response_status">Response status:</label>
+                        <input type="text" id="response_status" name="response_status" required/>
+                    </div>
+                    <div className="wrap-input">
+                        <label for="note">Note:</label>
+                        <input type="text" id="note" name="note" required/>
+                    </div>
+                    <div className="form-add-btn-box">
+                        <button type="submit">Add</button>
+                        <button type="submit">Exit</button>
+                    </div>
+                </form>
             </main>
             <footer className="app-footer container">footer</footer>
        </div>
