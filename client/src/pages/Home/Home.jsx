@@ -12,8 +12,8 @@ function Home() {
                     </h1>
                 </Link>
                 <div className="box-btns">
-                    <button>Add</button>
-                    <button>Delete</button>
+                    <button className='btn-main'>Add</button>
+                    <button className='btn-main btn__delete'>Delete</button>
                 </div>
             </heaeder>
             <main className="app-main">
