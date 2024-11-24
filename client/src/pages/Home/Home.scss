@@ -82,6 +82,15 @@ li{
             background-color: rgb(237 238 242);
           }
     }
+    &-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        background-color: lightblue;
+        font-style: italic;
+    }
 }
 
 .btn-main{
@@ -126,4 +135,6 @@ li{
 
 }
 
-
+.hidden{
+    display: none;
+}

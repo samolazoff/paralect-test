@@ -1,6 +1,7 @@
 import './Home.scss';
 
 import { Link } from 'react-router-dom';
+import isHiddenElements from '../../utils/isHiddenElement';
 
 function Home() {
     return(
@@ -12,7 +13,7 @@ function Home() {
                     </h1>
                 </Link>
                 <div className="box-btns">
-                    <button className='btn-main'>Add</button>
+                    <button className='btn-main' onClick={()=>isHiddenElements('.form-add')}>Add</button>
                     <button className='btn-main btn__delete'>Delete</button>
                 </div>
             </heaeder>
@@ -45,7 +46,7 @@ function Home() {
                         </tr>
                     </tbody>
                 </table>
-                <form action="/" method="post" className='form-add'>
+                <form action="/" method="post" className='form-add hidden'>
                     <div className="wrap-input">
                         <label for="name_company">Company:</label>
                         <input type="text" id="name_company" name="name_company" required/>
@@ -67,12 +68,14 @@ function Home() {
                         <input type="text" id="note" name="note" required/>
                     </div>
                     <div className="form-add-btn-box">
-                        <button type="submit">Add</button>
-                        <button type="submit">Exit</button>
+                        <button type="submit"  onClick={()=>isHiddenElements('.form-add')}>Add</button>
+                        <button  onClick={()=>isHiddenElements('.form-add')}>Exit</button>
                     </div>
                 </form>
             </main>
-            <footer className="app-footer container">footer</footer>
+            <footer className="app-footer container">
+                <Link to='https://github.com/samolazoff'>by Samolazoff</Link>
+            </footer>
        </div>
     )
 };
